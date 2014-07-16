@@ -1,0 +1,21 @@
+<?php
+/**
+ * 全局配置文件
+ */
+
+define('ROOT', realpath(dirname(__FILE__) . '/../'));
+define('LIB', ROOT . '/lib/');
+define('CONF', ROOT . '/config/');
+define('LOG', '/home/username/logs/');
+define('TIME_ZONE_DEFAULT', 'Asia/Shanghai');
+
+//code
+define('CODE_SUCCESS', 0);
+define('CODE_SYSTEM_ERROR_FILE', 203000000);
+define('CODE_SYSTEM_ERROR_DATABASE', 202000000);
+define('CODE_SYSTEM_ERROR_LOGIC', 205000000);
+
+//xhprof
+define('XHPROF_RATIO', '0');
+define('XHPROF_LIB', '/opt/xhprof/');
+

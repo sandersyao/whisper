@@ -1,0 +1,10 @@
+<?php
+/**
+ * memcache 相关配置
+ */
+return array(
+        'default' => array(
+                array(
+                        'host' => '127.0.0.1', 'port' => '11211', 'weight' => '100'),
+        ),
+);

@@ -1,0 +1,24 @@
+server
+{   
+	listen       8001; 
+	server_name weixin.dev.meizi.com;
+	index index.html index.php;
+	root  /home/yaoxiaowei/meizi/weixin/webroot/;
+	access_log /home/yaoxiaowei/logs/weixin_access.log debug;
+	error_log /home/yaoxiaowei/logs/weixin_error.log;
+
+	    location / {
+
+			index index.php index.html;
+	    }
+
+	    location ~ \.php$ {
+
+			#fastcgi_pass   unix:/dev/shm/phpfpm.sock;
+			fastcgi_pass  127.0.0.1:9000;
+			fastcgi_index  index.php;
+			fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+			include        fastcgi_params;
+	    }
+}   
+
