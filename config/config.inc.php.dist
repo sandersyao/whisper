@@ -16,6 +16,6 @@ define('CODE_SYSTEM_ERROR_DATABASE', 202000000);
 define('CODE_SYSTEM_ERROR_LOGIC', 205000000);
 
 //xhprof
-define('XHPROF_RATIO', '0');
-define('XHPROF_LIB', '/opt/xhprof/');
+//define('XHPROF_RATIO', '0');
+//define('XHPROF_LIB', '/opt/xhprof/');
 
