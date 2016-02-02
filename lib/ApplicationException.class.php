@@ -4,6 +4,8 @@
  *
  * @author  yaoxiaowei
  */
+namespace   whisper;
+
 class   ApplicationException extends Exception {
 
 }
