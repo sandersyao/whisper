@@ -31,7 +31,7 @@ class   Application {
     /**
      * 错误日志地址
      */
-    const   LOG_PATH                    = 'weixin/exception_%y%m%d.log';
+    const   LOG_PATH                    = '/exception_%y%m%d.log';
 
     /**
      * 日志引擎
